@@ -1,0 +1,11 @@
+type Player @aws_api_key @aws_cognito_user_pools {
+  playerId: String
+  name: String
+  score: Int
+  profilePicture: String
+}
+type Query {
+  players: [Player] @aws_api_key @aws_cognito_user_pools
+  player(playerId: String!): Player @aws_api_key @aws_cognito_user_pools
+  whoAmI: String @aws_cognito_user_pools
+}

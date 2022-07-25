@@ -1,14 +1,17 @@
-# Welcome to your CDK TypeScript project
+# Typescript CDK Project
 
-This is a blank project for CDK development with TypeScript.
+#### Running the project
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+    ```bash
+    npm run cdkwatch
+    npm run tswatch
+    ```
 
-## Useful commands
+`cdkwatch` is a command that watches the CDK project for changes and rebuilds the project and deploys it to AWS
+`tswatch` is a command that watches the TypeScript LAMBDA project for changes and transpiles it to JavaScript for AWS Lambda to use.
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+**Note**
+
+Run BOTH in scripts for development.
+
+Use VSCode for best experience.
